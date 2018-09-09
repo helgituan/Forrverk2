@@ -71,15 +71,15 @@ console.log(savingsAccount.printAccountSummary());
 (objects). Pizzan þarf að hafa; verð, stærð (large, medium, size) og álegg (ostur, skinka,
 pepperoni, ananas). Dæmi: Stór Magherita (ostur, oregano) kr. 2195. (1%)
 ```javascript
+
 function Pizza(size,alegg,alegg1){
   this.size = size
   this.alegg = alegg
-  this.alegg1 = alegg1
 }
 
-var Pizza1 ={size: "Stór", alegg:"skinka" , alegg1:"ananas"}
-var Pizza2 ={size: "Lítil", alegg:"pepperoni" , alegg1:"rjómaostur"}
+var Pizza1 ={size: "Stór", alegg:["skinka","ananas"]}
+var Pizza2 ={size: "Lítil", alegg:["pepperoni","rjómaostur"]}
 
-console.log(Pizza1.size +" Hawaii ("+ Pizza1.alegg , Pizza1.alegg1 + ") kr. 2295.")
-console.log(Pizza2.size +" RjómaPepp ("+ Pizza2.alegg , Pizza2.alegg1 + ") kr. 1995.")
+console.log(Pizza1.size +" Hawaii ("+ Pizza1.alegg[0] , Pizza1.alegg[1] + ") kr. 2295.")
+console.log(Pizza2.size +" RjómaPepp ("+ Pizza2.alegg[0] , Pizza2.alegg[1] + ") kr. 1995.")
 ```
