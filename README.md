@@ -72,7 +72,7 @@ console.log(savingsAccount.printAccountSummary());
 pepperoni, ananas). Dæmi: Stór Magherita (ostur, oregano) kr. 2195. (1%)
 ```javascript
 
-function Pizza(size,alegg,alegg1){
+function Pizza(size,alegg){
   this.size = size
   this.alegg = alegg
 }
